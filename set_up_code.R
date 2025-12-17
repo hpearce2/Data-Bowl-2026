@@ -55,7 +55,6 @@ tracking_all[, player_role := na.locf(
   na.rm = FALSE
 ), by = .(game_id, play_id, nfl_id)]
 
-
 # Filter to post-throw frames for all downs
 air_tracking <- tracking_all[
   phase == "post_throw" &
